@@ -13,69 +13,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
-  <header class="w-full border-2">
-    <nav id="navbar" class="navbar w-full flex">
-      <div id="logo" class="flex-1 pl-16 md:pl-28">
-        <a
-          href="#"
-          class="bg-[#EDBF9A] text-lg font-bold text-info-content rounded-lg px-2"
-          >PUEY PUEY</a
-        >
-      </div>
-      <div class="navbar-end">
-        <button id="search" class="btn btn-ghost btn-circle text-info-content">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
-          </svg>
+  <header class="bg-white shadow w-full h-[72px]">
+    <div
+      class="md:px-64 px-16 py-4 flex items-center justify-between w-full h-full"
+    >
+      <div class="flex items-center space-x-8">
+        <button class="text-2xl font-bold p-2 bg-[#EDBF9A] rounded-3xl">
+          LOGO
         </button>
-        <button id="cart" class="btn btn-ghost btn-circle text-info-content">
+        <nav class="space-x-2 md:space-x-4">
+          <a href="#" class="text-yellow-700 hover:text-yellow-900">Home</a>
+          <a href="#" class="text-yellow-700 hover:text-yellow-900">Product</a>
+          <a href="#" class="text-yellow-700 hover:text-yellow-900">About Us</a>
+          <a href="#" class="text-yellow-700 hover:text-yellow-900">Contact</a>
+        </nav>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button class="btn btn-ghost btn-circle text-info-content">
           <box-icon name="cart"></box-icon>
         </button>
-        <button id="user" class="btn btn-ghost btn-circle text-info-content">
+        <button class="btn btn-ghost btn-circle text-info-content">
           <box-icon name="user"></box-icon>
         </button>
-        <div
-          id="nav-dropdown"
-          class="dropdown text-info-content flex justify-end"
-        >
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-white rounded-box w-52 mt-12"
-          >
-            <li><a>Homepage</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>About</a></li>
-          </ul>
-        </div>
       </div>
-    </nav>
+    </div>
   </header>
   <body class="bg-[#FEFEFE]">
     <main>
@@ -171,24 +132,24 @@
       <!-- Hero -->
       <section class="relative">
         <!-- innertext -->
-        <div class="absolute bottom-0 md:pb-28">
+        <div class="absolute md:bottom-0 bottom-24 md:pb-28 md:mb-24">
           <h1
-            class="text-[#EDBF9A] text-[32px] pl-24 md:text-[64px] md:w-2/3 md:pl-32"
+            class="font-bold text-[#EDBF9A] text-[32px] pl-24 md:text-[64px] md:w-2/3 md:pl-64"
           >
             PUEY PUEY DESIGN
           </h1>
-          <p class="text-white pl-24 md:pl-32 w-full text-xl">
+          <p class="text-2xl text-white pl-24 md:pl-64 w-full">
             Furnish Their Happiness:
           </p>
-          <p class="text-white pl-24 md:pl-32 pb-4 w-full text-xl">
+          <p class="text-white pl-24 md:pl-64 pb-4 w-full text-2xl">
             Where Comfort Meets Wagging Tails!
           </p>
-          <p class="text-white pl-24 md:pl-32 pb-6 w-full text-xl">
+          <p class="text-white pl-24 md:pl-64 pb-6 w-full text-2xl">
             ตกแต่งความสุขของพวกเขา: ที่ซึ่งความสะดวกสบายมาพร้อมกับการกระดิกหาง!
           </p>
         </div>
         <!--hero-->
-        <div class="w-full h-[547px]">
+        <div class="w-full h-[700px]">
           <div class="w-full h-full">
             <img
               class="h-full w-full object-cover"
@@ -198,13 +159,39 @@
           </div>
         </div>
       </section>
+      <!-- Hero -->
+      <section class="relative">
+        <!-- innertext -->
+        <div class="absolute bottom-24 md:pb-2 md:mb-64">
+          <h1
+            class="font-bold md:text-[#794222] text-[48px] text-white pl-24 md:text-[64px] md:pl-64 md:w-2/3 md:pl-32"
+          >
+            THE BEST FOR YOUR PETS 25% DISCOUNT
+          </h1>
+          <button
+            class="p-4 text-2xl text-white rounded-2xl ml-72 bg-[#BD8356] md:ml-[445px] md:mt-4"
+          >
+            <a href="#">Discover Menu</a>
+          </button>
+        </div>
+        <!--hero-->
+        <div class="w-full h-[780px]">
+          <div class="w-full h-full">
+            <img
+              class="h-full w-full object-cover"
+              src="./images/Promo.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
       <!-- Product card -->
-      <section class="w-full">
+      <section class="w-full md:px-32">
         <div>
           <h2 class="pl-32 pt-16 text-3xl">Recommended</h2>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -270,7 +257,7 @@
           <h2 class="pl-32 pt-16 text-3xl">Best Seller</h2>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -330,7 +317,7 @@
           <h2 class="pl-32 pt-16 text-3xl">All product</h2>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -386,7 +373,7 @@
           </div>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -442,7 +429,7 @@
           </div>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -498,7 +485,7 @@
           </div>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -554,7 +541,7 @@
           </div>
         </div>
         <div
-          class="pt-8 flex flex-col items-center md:flex md:flex-row md:justify-around md:gap-x-8"
+          class="pt-8 flex flex-col space-y-8 md:space-y-0 md:space-x-8 items-center md:flex md:flex-row md:justify-between pb-8"
         >
           <!-- card1 -->
           <div class="card w-96 bg-base-100 shadow-xl">
@@ -615,23 +602,25 @@
       </section>
     </main>
   </body>
-  <footer class="footer p-10 bg-[#ECB390] text-base-content">
+  <footer
+    class="footer px-32 py-8 bg-gradient-to-r from-[#794222] to-[#BD8356] text-base-content"
+  >
     <nav>
-      <h6 class="footer-title">Services</h6>
-      <a class="link link-hover">Branding</a>
-      <a class="link link-hover">Design</a>
-      <a class="link link-hover">Marketing</a>
-      <a class="link link-hover">Advertisement</a>
+      <h6 class="footer-title text-white text-2xl">Services</h6>
+      <a class="link link-hover text-white text-xl">Branding</a>
+      <a class="link link-hover text-white text-xl">Design</a>
+      <a class="link link-hover text-white text-xl">Marketing</a>
+      <a class="link link-hover text-white text-xl">Advertisement</a>
     </nav>
     <nav>
-      <h6 class="footer-title">Company</h6>
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
+      <h6 class="footer-title text-white text-2xl">Company</h6>
+      <a class="link link-hover text-white text-xl">About us</a>
+      <a class="link link-hover text-white text-xl">Contact</a>
+      <a class="link link-hover text-white text-xl">Jobs</a>
+      <a class="link link-hover text-white text-xl">Press kit</a>
     </nav>
     <nav>
-      <h6 class="footer-title">Social</h6>
+      <h6 class="footer-title text-white text-2xl">Social</h6>
       <div class="grid grid-flow-col gap-4">
         <a
           ><svg

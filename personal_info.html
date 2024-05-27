@@ -12,9 +12,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
-  <body>
+  <body class="bg-white">
     <header>
-      <nav class="navbar bg-slate-100">
+      <nav class="navbar bg-slate-100 md:px-40">
         <div class="flex-1 px-2 lg:flex-none navbar-start">
           <a href="#" class="text-lg font-bold text-info-content">PUEY PUEY</a>
         </div>
@@ -77,8 +77,8 @@
       </nav>
     </header>
 
-    <main class="bg-white">
-      <div class="main-dropdown py-5 flex justify-center">
+    <main>
+      <div class="main-dropdown py-5 flex justify-center md:hidden">
         <select
           class="select w-full max-w-xs bg-white text-info-content border-slate-300"
         >
@@ -91,119 +91,89 @@
         </select>
       </div>
 
-      <div class="px-6 flex-col justify-items-center">
-        <div class="flex justify-between pt-3">
-          <h1 class="text-info-content text-4xl font-bold">Personal info</h1>
-          <button class="btn btn-outline text-info-content">
-            View profile
-          </button>
-        </div>
-
-        <div class="text-info-content">
-          <div class="py-4 text-lg">Account info</div>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">DISPLAY NAME</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Enter your display name"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">REAL NAME</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Enter your real name"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">PHONE</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Phone number"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">EMAIL</span>
-            </div>
-            <input
-              type="text"
-              placeholder="example@gmail.com"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">ADDRESS</span>
-            </div>
-            <input
-              type="text"
-              placeholder="Enter your address"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <div class="py-4 text-lg">Social</div>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">FACEBOOK</span>
-            </div>
-            <input
-              type="text"
-              placeholder="@facebook username"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">TWITTER</span>
-            </div>
-            <input
-              type="text"
-              placeholder="@twitter username"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <label class="form-control w-full max-w-xs pb-3">
-            <div class="label">
-              <span class="label-text font-bold">INSTAGRAM</span>
-            </div>
-            <input
-              type="text"
-              placeholder="@instagram username"
-              class="input input-bordered w-full max-w-xs bg-white"
-            />
-          </label>
-
-          <div class="personal_info_button flex gap-3 justify-center py-7">
-            <button class="btn bg-black text-white">Update profile</button>
-
-            <button class="btn bg-slate-100 text-info-content">
-              <box-icon name="x"></box-icon> Clear all
+      <section class="md:flex md:mx-40 md:mt-16">
+        <div class="md:flex-1"></div>
+        <div class="md:flex-1 max-sm:px-6 max-sm:flex-col justify-items-center">
+          <div class="flex justify-between pt-3">
+            <h1 class="text-info-content text-4xl font-bold">Personal info</h1>
+            <button class="btn btn-outline text-info-content">
+              View profile
             </button>
           </div>
+
+          <div class="text-info-content">
+            <div class="py-4 text-lg">Account info</div>
+            
+            <div class="md:flex md:flex-wrap md:gap-6">
+              <label class="form-control w-full max-w-xs pb-3">
+                <div class="label">
+                  <span class="label-text font-bold">DISPLAY NAME</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your display name"
+                  class="input input-bordered w-full max-w-xs bg-white"
+                />
+              </label>
+
+              <label class="form-control w-full max-w-xs pb-3">
+                <div class="label">
+                  <span class="label-text font-bold">REAL NAME</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your real name"
+                  class="input input-bordered w-full max-w-xs bg-white"
+                />
+              </label>
+
+              <label class="form-control w-full max-w-xs pb-3">
+                <div class="label">
+                  <span class="label-text font-bold">PHONE</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Phone number"
+                  class="input input-bordered w-full max-w-xs bg-white"
+                />
+              </label>
+
+              <label class="form-control w-full max-w-xs pb-3">
+                <div class="label">
+                  <span class="label-text font-bold">EMAIL</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="example@gmail.com"
+                  class="input input-bordered w-full max-w-xs bg-white"
+                />
+              </label>
+
+              <label class="form-control w-full max-w-xs pb-3">
+                <div class="label">
+                  <span class="label-text font-bold">ADDRESS</span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Enter your address"
+                  class="input input-bordered w-full max-w-xs bg-white"
+                />
+              </label>
+            </div>
+
+            <div class="personal_info_button flex gap-3 justify-center py-7">
+              <button class="btn bg-black text-white">Update profile</button>
+
+              <button class="btn bg-slate-100 text-info-content">
+                <box-icon name="x"></box-icon> Clear all
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
 
-    <footer class="footer p-10 text-base-content bg-black">
+    <footer class="footer p-10 text-base-content bg-black md:px-40">
       <nav>
         <h6 class="footer-title">Services</h6>
         <a class="link link-hover">Branding</a>

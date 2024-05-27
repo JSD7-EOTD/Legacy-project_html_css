@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <header class="bg-white shadow">
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-4">
+          <button class="text-xl font-semibold text-yellow-700">LOGO</button>
+          <nav class="space-x-4">
+            <a href="#" class="text-yellow-700 hover:text-yellow-900">Home</a>
+            <a href="#" class="text-yellow-700 hover:text-yellow-900"
+              >Discover</a
+            >
+            <a href="#" class="text-yellow-700 hover:text-yellow-900">Blog</a>
+            <a href="#" class="text-yellow-700 hover:text-yellow-900"
+              >About Us</a
+            >
+            <a href="#" class="text-yellow-700 hover:text-yellow-900"
+              >Contact</a
+            >
+          </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="text-yellow-700">Login</button>
+          <button class="text-yellow-700">Cart</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+      <div class="bg-white rounded-lg shadow p-8 text-center">
+        <div class="mb-8 flex justify-center">
+          <div>
+            <img
+              src="./images/delivery.png"
+              alt="Delivery Icon"
+              class="mx-auto mb-4"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h1 class="text-2xl font-bold text-yellow-700">
+              Thank you for your order!
+            </h1>
+            <p class="text-gray-600">
+              Order number is:
+              <span class="font-semibold text-yellow-700">#123456</span>
+            </p>
+            <p class="text-gray-600">
+              You can track your order in "My Order" section
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center space-x-4">
+          <button
+            class="px-4 py-2 bg-gradient-to-r from-[#794222] to-[#BD8356] text-white rounded hover:bg-yellow-800"
+          >
+            Track my order
+          </button>
+          <button
+            class="px-4 py-2 bg-gray-200 text-yellow-700 rounded hover:bg-gray-300"
+          >
+            Continue shopping
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-gradient-to-r from-[#794222] to-[#BD8356] text-white py-8"
+    >
+      <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-xl font-semibold">Sweetdeli</h2>
+          <ul class="mt-4 space-y-2">
+            <li>Email: sweetdeli@gmail.com</li>
+            <li>Phone: +1-2345-6789</li>
+            <li>Address: 123 Ave, New York, USA</li>
+          </ul>
+          <div class="mt-4 flex space-x-2">
+            <a href="#" class="text-white">FB</a>
+            <a href="#" class="text-white">TW</a>
+            <a href="#" class="text-white">IG</a>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Products</h2>
+          <ul class="mt-4 space-y-2">
+            <li>Product 1</li>
+            <li>Product 2</li>
+            <li>Product 3</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">About</h2>
+          <ul class="mt-4 space-y-2">
+            <li>About us</li>
+            <li>Our story</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold">Get the app</h2>
+          <div class="mt-4">
+            <a href="#"
+              ><img
+                src="./images/apple.png"
+                alt="App Store"
+                class="mb-2 rounded-md"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/android.png"
+                alt="Google Play"
+                class="rounded-md"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-6 mt-8 text-center">
+        <p class="text-white text-sm">&copy; 2020, All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

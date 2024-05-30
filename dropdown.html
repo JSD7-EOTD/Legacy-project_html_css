@@ -11,5 +11,69 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="navbar bg-slate-100">
+        <div class="flex-1 px-2 lg:flex-none navbar-start">
+          <a href="#" class="text-lg font-bold text-info-content">PUEY PUEY</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle text-info-content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+
+          <button class="btn btn-ghost btn-circle text-info-content">
+            <box-icon name="cart"></box-icon>
+          </button>
+
+          <button class="btn btn-ghost btn-circle text-info-content">
+            <box-icon name="user"></box-icon>
+          </button>
+
+          <div
+            id="nav-dropdown"
+            class="dropdown text-info-content flex justify-end"
+          >
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-white rounded-box w-52 mt-12"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
